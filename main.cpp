@@ -21,6 +21,6 @@ int main() {
     ht.delete_value(27);
     ht.print();
 //    ht.print_reverse();
-    cout << "\n\n\nانا جامد" << endl;
+    cout << "\n\n\nNo Run Time Error" << endl;
     return 0;
 }
