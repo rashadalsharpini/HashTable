@@ -102,6 +102,7 @@ void LinkedList<T>::delete_front() {
         head->prev= nullptr;
     else if(!length)
         tail= nullptr;
+    cout<<"Deleted Successfully\n";
 }
 template <typename T>
 void LinkedList<T>::delete_end() {
@@ -114,11 +115,12 @@ void LinkedList<T>::delete_end() {
         tail->next = nullptr;
     else if(!length)
         head = nullptr;
+    cout<<"Deleted Successfully\n";
 }
 template <typename T>
 void LinkedList<T>::delete_nth(int index) {
     if(index<0||index>length)
-        cout<<"Error. No such nth node\n";
+        cout<<"Error. No such node\n";
     else if(index==0)
         delete_front();
     else if(index==length-1)
@@ -127,6 +129,7 @@ void LinkedList<T>::delete_nth(int index) {
         Node<T>*cur = get_nth(index);
         link(cur->prev,cur->next);
         delete_node(cur);
+        cout<<"Deleted Successfully\n";
     }
 }
 template <typename T>

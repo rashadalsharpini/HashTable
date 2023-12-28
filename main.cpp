@@ -13,9 +13,14 @@ int main() {
     ht.insert(8);
     ht.insert(9);
     ht.insert(10);
+//    for (int i = 0; i < 100; ++i) {
+//        ht.insert(i);
+//    }
+    ht.delete_value(25);
     ht.print();
-    ht.delete_value(7);
+    ht.delete_value(27);
     ht.print();
+//    ht.print_reverse();
     cout << "\n\n\nانا جامد" << endl;
     return 0;
 }

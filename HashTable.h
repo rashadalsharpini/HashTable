@@ -12,8 +12,10 @@ class HashTable {
 private:
     LinkedList<int> ll[10];
 public:
+    int hash(int key);
     void insert(int value);
     void print();
+    void print_reverse();
     int search(int value);
     void delete_value(int value);
 };
