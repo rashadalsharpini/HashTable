@@ -1,2 +1,2 @@
-# Hash Table based on
-# Chaining Technique
+# Hash Table based on ⤵
+## Chaining Technique
